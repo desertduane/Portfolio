@@ -6,21 +6,32 @@ nav {
   background-color: grey;
 }
 #name{
-  float: left;
+  /*float: left;*/
 }
 .nav-list {
   display: block;
 }
 .nav-list li{
   display: inline-block;
+  margin-left: 3em;
+}
+#projects ul{
+  list-style: none;
 }
 img {
   max-width: 100%;
 }
 #project-carousel {
-height: 400px;
+height: 25em;
 }
-
-footer li{
+#project-carousel img{
+  display: block;
+  margin: 0 auto;
+}
+footer li {
   display: inline-block;
+  margin-right: 2em;
+}
+footer{
+  background-color: grey;
 }
