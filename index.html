@@ -11,15 +11,17 @@
   <nav>
     <h1 id="name">Duane Rush</h1>
     <ul class="nav-list">
-      <li>About</li>
-      <li>GitHub</li>
-      <li>Projects</li>
+      <li class="tab" data-content="home"><a href="#">Home</a></li>
+      <li class="tab" data-content="about"><a href="#">About</a></li>
+      <li class="tab"><a href="https://github.com/desertduane">GitHub</a></li>
+      <li class="tab" data-content="projects"><a href="#">Projects</a></li>
     </ul>
   </nav>
-  <section id="project-carousel">
+<div id="home" class="tab-content">
+  <section id="project-carousel" class="tab-content">
     <img src="http://via.placeholder.com/960x400" />
   </section>
-  <section id="projects">
+  <section id="projects" class="tab-content">
     <h1>Projects</h1>
     <ul>
       <li>Project 1</li>
@@ -29,13 +31,15 @@
       <li>Project 5</li>
       <li>Project 6</li>
     </ul>
-    <h1>About</h1>
-    <section>
+    <section id="about" class="tab-content">
+      <h1>About</h1>
       <p>Lorem ipsum dolor sit amet, sea ea quem consequat. Qui et quando verear suscipiantur. Facer iracundia id vix, vim ad graeci inermis. Mandamus adolescens duo ea, mazim dissentiet vel ei, est mentitum consulatu eu. Nam ne audire dissentiunt, et debitis
-        recteque dissentiunt mei.</p><p>Dolor vocibus necessitatibus qui ea, pro ea quidam numquam minimum. Nec et dicit aperiam platonem, et fastidii sententiae est, noluisse expetenda sed no. Enim diceret ad eos, his oblique blandit erroribus in, impedit
-        tacimates sit an. Sea ei dolor expetendis, ei eam accusam atomorum. Graeci similique pertinacia mei ei, ad pri porro omittantur. Cetero mnesarchum te sed, at sed dico albucius necessitatibus.
+        recteque dissentiunt mei.</p>
+      <p>Dolor vocibus necessitatibus qui ea, pro ea quidam numquam minimum. Nec et dicit aperiam platonem, et fastidii sententiae est, noluisse expetenda sed no. Enim diceret ad eos, his oblique blandit erroribus in, impedit tacimates sit an. Sea ei dolor
+        expetendis, ei eam accusam atomorum. Graeci similique pertinacia mei ei, ad pri porro omittantur. Cetero mnesarchum te sed, at sed dico albucius necessitatibus.
       </p>
     </section>
+  </div>
     <footer>
       <ul>
         <li><a href="">DuaneRush.com</a></li>
@@ -43,6 +47,10 @@
         <li><a href=""><img src="http://via.placeholder.com/30x30" /></a></li>
         <li><a href=""><img src="http://via.placeholder.com/30x30" /></a></li>
       </ul>
+    </footer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="app.js"></script>
 </body>
 
 </html>
