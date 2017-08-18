@@ -1,7 +1,4 @@
-* {
-  border: solid black 1px;
 
-}
 nav {
   background-color: grey;
 }
@@ -19,14 +16,25 @@ nav {
   list-style: none;
 }
 img {
-  max-width: 100%;
+  max-width: 95%;
 }
 #project-carousel {
-height: 25em;
+  position: relative;
+  height: 23em;
 }
-#project-carousel img{
-  display: block;
-  margin: 0 auto;
+#project-carousel img {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+}
+
+#project-carousel img.active {
+    z-index:10;
+}
+
+#project-carousel img.last-active {
+    z-index:9;
 }
 footer li {
   display: inline-block;
