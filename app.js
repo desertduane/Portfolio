@@ -15,6 +15,8 @@ function navList() {
   $('.nav-list .tab').click();
 }
 
+
+//example from http://jonraasch.com/blog/a-simple-jquery-slideshow
 function carouselAnimate() {
   var $active = $('#project-carousel img.active');
 
