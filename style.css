@@ -1,7 +1,4 @@
-* {
-  border: solid black 1px;
 
-}
 nav {
   background-color: grey;
 }
@@ -23,7 +20,7 @@ img {
 }
 #project-carousel {
   position: relative;
-  height: 20em;
+  height: 23em;
 }
 #project-carousel img {
     position:absolute;
