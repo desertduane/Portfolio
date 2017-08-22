@@ -6,11 +6,9 @@ function navList() {
     if ($(this).attr('data-content') === 'about' || $(this).attr('data-content') === 'projects') {
       $('.tab-content').hide();
       $('#' + $(this).attr('data-content')).fadeIn();
-      // $('#about').show();
     } else {
       $('.tab-content').fadeIn();
     }
-
   })
   $('.nav-list .tab').click();
 }
