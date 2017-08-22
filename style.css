@@ -1,9 +1,8 @@
-/**{
-  border: 1px solid;
-}*/
+
 body {
   background-color: teal;
 }
+
 nav {
   background-color: grey;
 }
@@ -12,36 +11,34 @@ nav {
   display: block;
 }
 
-.nav-list li{
+.nav-list li {
   display: inline-block;
   margin-left: 3em;
 }
 
-img {
-  max-width: 95%;
-}
-h1{
+h1 {
   text-align: center;
 }
 
 #project-carousel {
-  position: relative;
+  margin: 0 auto;
   height: 23em;
+  width: 31em;
+  max-width: 100%;
 }
 
 #project-carousel img {
-    position:absolute;
-    top:0;
-    left: 15em;
-    z-index:8;
+  position: absolute;
+  max-width: 95%;
+  z-index: 8;
 }
 
 #project-carousel img.active {
-    z-index:10;
+  z-index: 10;
 }
 
 #project-carousel img.last-active {
-    z-index:9;
+  z-index: 9;
 }
 
 #casino-war {
@@ -50,32 +47,42 @@ h1{
   height: 18.75em;
   max-width: 100%;
 }
+
 #cookie-stand {
   max-width: 100%;
   background-image: url(Images/cookie-stand.png);
   width: 28.13em;
   height: 18.75em;
 }
+
 #bus-mall {
-    max-width: 100%;
-    background-image: url(Images/bus-mall.png);
-    width: 28.13em;
-    height: 18.75em;
+  max-width: 100%;
+  background-image: url(Images/bus-mall.png);
+  width: 28.13em;
+  height: 18.75em;
+}
+#projects {
+  text-align: center;
 }
 
 #projects div {
   display: inline-block;
+
 }
-#projects div h2 a{
+
+#projects div h2 a {
   color: white;
 }
-#projects div h2{
+
+#projects div h2 {
   text-align: center;
 }
+
 footer li {
   display: inline-block;
   margin-right: 2em;
 }
-footer{
+
+footer {
   background-color: grey;
 }
