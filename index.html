@@ -4,7 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>Portfolio</title>
-  <link href="style.css" rel="stylesheet" />
+  <link href="styles/base.css" rel="stylesheet" />
+  <link href="styles/modules.css" rel="stylesheet" />
+  <link href="styles/layout.css" rel="stylesheet" />
+
+  <script id="projects-template" type="text/x-handlebars-template">
+    <div><h2><a href="{{projectUrl}}">{{title}}</a></h2><img src="{{imgUrl}}" /></div>
+  </script>
 </head>
 
 <body>
@@ -28,17 +34,8 @@
 
   <section id="projects" class="tab-content">
     <h1>Projects</h1>
-
-    <div id="casino-war"><h2><a href="http://casinowar.fun/">Casino War Game</a></h2></div>
-
-    <div id="bus-mall"><h2><a href="https://desertduane.github.io/BussMall/">JSON Local Storage project</a></h2></div>
-
-    <div id="cookie-stand"><h2><a href="https://desertduane.github.io/Cookie-Stand/">Form Adding to a table</a></h2></div>
-
-    <div id="cookie-stand"><h2><a href="https://desertduane.github.io/Cookie-Stand/">This project TBD!!</a></h2></div>
-
   </section>
-
+  
     <section id="about" class="tab-content">
       <h1>About</h1>
       <p>Hello! My name is Duane Rush welcome to my code portfolio. I was born in Washington and lived in Gig Harbor until the end of my second grade year. My family and I then moved to Southern Califonia where we lived until I had finished high school. We then decided to move back to our home state where I attended college at Central Washington University and got my bachelors in cell biology. After working an unfulfilling lab tech job for three years I realized my pasion was not with biology and that is how I came to discover Code Fellows.</p>
@@ -55,7 +52,10 @@
     </footer>
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="app.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+      <script src="scripts/projectData.js"></script>
+      <script src="scripts/app.js"></script>
+      <script src="scripts/projectView.js"></script>
 </body>
 
 </html>

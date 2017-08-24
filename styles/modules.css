@@ -1,25 +1,4 @@
 
-body {
-  background-color: teal;
-}
-
-nav {
-  background-color: grey;
-}
-
-.nav-list {
-  display: block;
-}
-
-.nav-list li {
-  display: inline-block;
-  margin-left: 3em;
-}
-
-h1 {
-  text-align: center;
-}
-
 #project-carousel {
   margin: 0 auto;
   height: 23em;
@@ -42,7 +21,7 @@ h1 {
 }
 
 #casino-war {
-  background-image: url(Images/casino-war.png);
+  background-image: url("../Images/casino-war.png");
   width: 28.13em;
   height: 18.75em;
   max-width: 100%;
@@ -50,17 +29,18 @@ h1 {
 
 #cookie-stand {
   max-width: 100%;
-  background-image: url(Images/cookie-stand.png);
+  background-image: url("../Images/cookie-stand.png");
   width: 28.13em;
   height: 18.75em;
 }
 
 #bus-mall {
   max-width: 100%;
-  background-image: url(Images/bus-mall.png);
+  background-image: url("../Images/bus-mall.png");
   width: 28.13em;
   height: 18.75em;
 }
+
 #projects {
   text-align: center;
 }
@@ -76,13 +56,4 @@ h1 {
 
 #projects div h2 {
   text-align: center;
-}
-
-footer li {
-  display: inline-block;
-  margin-right: 2em;
-}
-
-footer {
-  background-color: grey;
 }
