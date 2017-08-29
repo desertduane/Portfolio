@@ -1,17 +1,5 @@
 'use strict';
 
-// function navList() {
-//   $('.nav-list').on('click', 'li', function() {
-//
-//     if ($(this).attr('data-content') === 'about' || $(this).attr('data-content') === 'projects') {
-//       $('.tab-content').hide();
-//       $('#' + $(this).attr('data-content')).fadeIn();
-//     } else {
-//       $('.tab-content').fadeIn();
-//     }
-//   })
-//   // $('.nav-list .tab').click();
-// }
 (function(module) {
   const carousel = {};
 
