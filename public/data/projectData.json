@@ -1,0 +1,27 @@
+
+ [
+  {
+    "projectUrl": "http://casinowar.fun/",
+    "title": "Casino War Game",
+    "imgUrl": "Images/casino-war.png"
+
+  },
+  {
+    "projectUrl": "https://desertduane.github.io/BussMall/",
+    "title": "JSON Local Storage Project",
+    "imgUrl": "Images/bus-mall.png"
+
+  },
+  {
+    "projectUrl": "https://desertduane.github.io/Cookie-Stand/",
+    "title": "Adding to a Table",
+    "imgUrl": "Images/cookie-stand.png"
+
+  },
+  {
+    "projectUrl": "https://desertduane.github.io/Cookie-Stand/",
+    "title": "Adding to a Table",
+    "imgUrl": "Images/cookie-stand.png",
+    "about": "<h1>About</h1><p>Hello! My name is Duane Rush welcome to my code portfolio. I was born in Washington and lived in Gig Harbor until the end of my second grade year. My family and I then moved to Southern Califonia where we lived until I had finished high school. We then decided to move back to our home state where I attended college at Central Washington University and got my bachelors in cell biology. After working an unfulfilling lab tech job for three years I realized my pasion was not with biology and that is how I came to discover Code Fellows.</p><p>The tech industry has always been of interest to me and with the discovery of Code Fellows I now have the opportunity to turn it into a life long career.</p>"
+  },
+];

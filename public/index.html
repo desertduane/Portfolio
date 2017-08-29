@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <link href="styles/base.css" rel="stylesheet" />
+  <link href="styles/modules.css" rel="stylesheet" />
+  <link href="styles/layout.css" rel="stylesheet" />
+
+  <script id="projects-template" type="text/x-handlebars-template">
+    <div><h2><a href="{{projectUrl}}">{{title}}</a></h2><img src="{{imgUrl}}" /></div>
+  </script>
+</head>
+
+<body>
+  <nav>
+    <h1 id="name">Duane Rush</h1>
+    <ul class="nav-list">
+      <li data-content="home"><a href="/home">Home</a></li>
+      <li data-content="about"><a href="/about">About</a></li>
+      <li data-content="projects"><a href="/project">Projects</a></li>
+    </ul>
+
+  </nav>
+
+<div>
+  <div id="project-carousel">
+    <img src="styles/Images/duane.jpg" alt="" class="active" />
+    <img src="styles/Images/fries.JPG" alt="" />
+    <img src="styles/Images/space-needle.JPG" alt="" />
+  </div>
+</div>
+
+  <main id="home">
+
+  <section id="projects" class="tab-content">
+    <h1>Projects</h1>
+  </section>
+
+    <section id="about" class="tab-content">
+    </section>
+    
+</main>
+    <footer>
+      <ul>
+        <li><a href="">&#9400;DuaneRush.com</a></li>
+        <li class="tab"><a href="https://github.com/desertduane">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/duane-rush-910508144/">LinkedIn</a></li>
+      </ul>
+    </footer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+      <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+      <script src="/scripts/carousel.js"></script>
+      <script src="/scripts/projectView.js"></script>
+      <script src="/scripts/controllers/homeController.js"></script>
+      <script src="/scripts/controllers/projectController.js"></script>
+      <script src="/scripts/controllers/aboutController.js"></script
+      <script src="/scripts/controllers/routes.js"></script>
+</body>
+
+</html>
