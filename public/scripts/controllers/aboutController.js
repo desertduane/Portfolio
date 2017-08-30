@@ -5,9 +5,10 @@ var app = app || {};
   const aboutController = {};
 
   aboutController.init = function() {
-  $('.tab-content').hide();
-  $('#about').show();
-}
+    $('.tab-content').hide();
+    $('#about').show();
+
+  }
 
   module.aboutController = aboutController;
 })(app);

@@ -5,9 +5,11 @@ var app = app || {};
   const projectController = {};
 
   projectController.init = function() {
-  $('.tab-content').hide();
-  $('#projects').show();
-}
+    $('.tab-content').hide();
+    $('#projects').show();
 
-  module.projectController = articleController;
+    app.repos.requestRepos(app.repoView.index);
+  }
+
+  module.projectController = projectController;
 })(app);
