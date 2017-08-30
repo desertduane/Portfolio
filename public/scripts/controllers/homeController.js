@@ -4,10 +4,10 @@ var app = app || {};
 (function(module) {
   const homeController = {};
 
-  projectController.init = function() {
-  $('#home').show();
+  homeController.init = function() {
+    $('#home').show();
 
-}
+  }
 
-  module.homeController = articleController;
+  module.homeController = homeController;
 })(app);
