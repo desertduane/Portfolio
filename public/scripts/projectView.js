@@ -1,34 +1,25 @@
 'use strict';
-var app = app || {};
 
-(function(module) {
-  function Project(projectDataObj) {
-    this.projectUrl = projectDataObj.projectUrl;
-    this.title = projectDataObj.title;
-    this.imgUrl = projectDataObj.imgUrl;
-    this.about = projectDataObj.about;
-  }
-  Project.all = [];
+var projects = [];
 
-  Project.prototype.toHtml = function() {
-    var templateRender = Handlebars.compile($('#projects-template').text());
+function Project(projectDataObj) {
+  this.projectUrl = projectDataObj.projectUrl;
+  this.title = projectDataObj.title;
+  this.imgUrl = projectDataObj.imgUrl;
+}
+Project.prototype.toHtml = function() {
+  var template = $('#projects-template').html();
+  var templateRender = Handlebars.compile(template);
 
-    return templateRender(this);
+  return templateRender(this);
 
-  };
+};
 
-  Project.loadAll = rows => {
-    Project.All = rows.map(ele => new Project(ele));
-  };
+projectData.forEach(function(projectObject) {
+  projects.push(new Project(projectObject))
+});
 
-  Project.fetchAll = callback => {
-    $.get('/projects')
-      .then(
-        results => {
-          Project.loadAll(results);
-          callback();
-        }
-      )
-  };
-  module.Project = Project;
-})(app);
+projects.forEach(function(project) {
+  $('#projects').append(project.toHtml());
+})
+

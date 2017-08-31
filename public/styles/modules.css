@@ -36,7 +36,9 @@
 
 #bus-mall {
   max-width: 100%;
-  background-image: url("Images/bus-mall.png");
+
+  background-image: url("../Images/bus-mall.png");
+
   width: 28.13em;
   height: 18.75em;
 }
