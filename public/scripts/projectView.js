@@ -1,4 +1,5 @@
 'use strict';
+
 var projects = [];
 
 function Project(projectDataObj) {
@@ -21,3 +22,4 @@ projectData.forEach(function(projectObject) {
 projects.forEach(function(project) {
   $('#projects').append(project.toHtml());
 })
+
