@@ -3,11 +3,9 @@ body {
 }
 
 nav {
-
-  position: fixed;
   width: 100%;
   background-color: grey;
-  
+
 }
 h1 {
   text-align: center;
